@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'lane';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lane'), local('Lane'), url("../font/lane.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-lane,
+body {
+  font-family: 'Lane';
+}
+body {
+  background: #2ecc71;
+}
+h1 {
+  color: #fafafa;
+}
+.center,
+.wrapper {
+  text-align: center;
+}
+button,
+input {
+  padding: 10px;
+  outline: none;
+  border: 0;
+}
+input {
+  margin: 10px;
+  clear: both;
+  width: 90%;
+}
+button {
+  height: 40px;
+  color: #fff;
+  margin: 10px;
+}
+.btn-primary {
+  background: #3498db;
+}
+.btn-secondary {
+  background: #34495e;
+}
+.form {
+  width: 250px;
+  display: inline-block;
+  color: #fff;
+}
+@media all and (max-width: 500px) {
+  button {
+    width: 90%;
+  }
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'lane';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lane'), local('Lane'), url("../font/lane.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-lane,
+body {
+  font-family: 'Lane';
+}
+body {
+  background: #2980b9 url("bg.jpg");
+}
+h1,
+h2,
+h3 {
+  color: #fafafa;
+}
+.center,
+.wrapper {
+  text-align: center;
+}
+button,
+input {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  width: 90%;
+}
+input {
+  margin: 0;
+  clear: both;
+  background: rgba(250,250,250,0.2);
+  color: #fff;
+}
+input:first-child {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid rgba(250,250,250,0.2);
+}
+input:nth-child(2) {
+  border-radius: 0 0 5px 5px;
+}
+button {
+  color: #fff;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.btn-primary {
+  background: rgba(80,250,250,0.2);
+}
+.btn-secondary {
+  background: #e74c3c;
+}
+.form {
+  width: 250px;
+  display: inline-block;
+}
+::-webkit-input-placeholder {
+  color: #cdcdcd;
+}
+:-moz-placeholder {
+  color: #cdcdcd;
+}
+::-moz-placeholder {
+  color: #cdcdcd;
+}
+:-ms-input-placeholder {
+  color: #cdcdcd;
+}

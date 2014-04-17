@@ -1,0 +1,36 @@
+@import "reset.styl"
+@import "font-lane.styl"
+
+
+body
+  @extend .font-lane
+  background #ecf0f1
+
+h1
+  font-size 50px
+  color #171717
+a
+  text-decoration none
+
+.center
+  text-align center
+
+.wrapper
+  width 100%
+.items
+  @extend .center
+
+  li
+    display inline-block
+    list-style none
+    width 80%
+    padding 5%
+    background #fff
+    .title
+      margin 2% 0 2% 0
+      color #fefefe
+      font-size 2vw
+    iframe
+      border none
+      width 400px
+      height 500px

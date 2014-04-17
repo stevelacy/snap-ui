@@ -1,0 +1,57 @@
+@import "../css/reset.styl"
+@import "../css/font-lane.styl"
+
+body
+  @extend .font-lane
+  background #2980b9 url(bg.jpg)
+
+h1, h2, h3
+  color #fafafa
+
+.center
+  text-align center
+
+button, input
+  padding 10px
+  outline none
+  border 0
+  width 90%
+
+input
+  margin 10px
+  clear both
+  background rgba(0, 0, 0, .2)
+  color #fff
+
+button
+  color #fff
+  margin 10px
+  font-size 20px
+  border-radius 20px
+
+.btn-primary
+  background #27ae60
+
+.btn-negative
+  background #e74c3c
+
+.wrapper
+  @extend .center
+
+.form
+  width 250px
+  display inline-block
+
+
+
+::-webkit-input-placeholder
+  color #cdcdcd
+
+:-moz-placeholder
+  color #cdcdcd
+
+::-moz-placeholder
+  color #cdcdcd
+
+:-ms-input-placeholder
+  color #cdcdcd

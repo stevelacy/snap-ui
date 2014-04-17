@@ -1,0 +1,47 @@
+@import "../css/reset.styl"
+@import "../css/font-lane.styl"
+
+body
+  @extend .font-lane
+  background #2ecc71
+
+h1 
+  color #fafafa
+
+.center
+  text-align center
+
+button, input
+  padding 10px
+  outline none
+  border 0
+
+input
+  margin 10px
+  clear both
+  width 90%
+
+button
+  height 40px
+  color #fff
+  margin 10px
+
+.btn-primary
+  background #3498db
+
+.btn-secondary
+  background #34495e
+
+.wrapper
+  @extend .center
+
+.form
+  width 250px
+  display inline-block
+  color #fff
+
+
+
+@media all and (max-width: 500px)
+  button
+    width 90%
