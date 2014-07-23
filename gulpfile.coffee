@@ -3,12 +3,14 @@ http = require "http"
 gulp = require "gulp"
 jade = require "gulp-jade"
 stylus = require "gulp-stylus"
-reload = require "gulp-livereload"
 coffee = require "gulp-coffee"
+reload = require "gulp-livereload"
+prefix = require "gulp-autoprefixer"
 
 gulp.task "stylus", ->
   gulp.src "./src/**/*.styl"
     .pipe stylus()
+    .pipe prefix()
     .pipe gulp.dest "./public"
     .pipe reload()
 
