@@ -1,4 +1,4 @@
-# Mobile app login-screens
+# Profile pages
 
 
-### [Github page](http://stevelacy.github.io/login-screens/)
+### [Github page](http://stevelacy.github.io/profile-pages/)
