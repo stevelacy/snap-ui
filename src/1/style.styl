@@ -3,13 +3,30 @@
 
 body
   @extend .font-lane
-  background #2ecc71
+  height 100%
 
-h1 
+h1
   color #fafafa
 
-.center
-  text-align center
+.background
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background #262626 url('./images/1.jpg') no-repeat center center fixed
+  background-size cover
+  filter: blur(10px);
+  z-index -2
+.shadow
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background rgba(10, 10, 10, .9)
+  z-index -1
+
 
 button, input
   padding 10px
@@ -26,22 +43,53 @@ button
   color #fff
   margin 10px
 
+
+
+.spacer-50
+  height 50px
+
 .btn-primary
   background #3498db
 
 .btn-secondary
   background #34495e
 
-.wrapper
-  @extend .center
+.header
+  height 50px
+  width 100%
+  padding 25px
+.profile
+  text-align center
+  .img
+    width 400px
+    height 400px
+    display inline-block
+    overflow hidden
+    box-shadow 0 0 5px #000
+    margin 25px
+    img
+      min-width 100%
+      margin-left -50%
+      left 25%
+      position relative
+      height 100%
+  .info
+    display inline-block
+    width 50%
+    margin 25px
+    padding 10px
+    border-top 2px solid rgba(20, 20, 20, .9)
+    color #fff
 
-.form
-  width 250px
-  display inline-block
-  color #fff
 
 
-
-@media all and (max-width: 500px)
-  button
-    width 90%
+@media all and (max-width: 600px)
+  .profile
+    text-align center
+    .img
+      width 60%
+      height 60%
+        img
+          min-width 100%
+          margin-left -60%
+          left 20%
