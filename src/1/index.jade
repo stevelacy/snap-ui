@@ -1,21 +1,30 @@
 doctype html
 html
   head
-    title Profile Page - 1
+    title nav drawer - 1
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" type="text/css" href="style.css")
+    link(rel="stylesheet" type="text/css" href="https://jakiestfu.github.io/Snap.js/snap.css")
+    link(rel="stylesheet" type="text/css" href="css/style.css")
+    script(src="js/snap.js")
   body
-    .header
-      h1 dusk one
-    .background
-    .shadow
-    .spacer-50
-    .profile
-      .img
-        img(src="./images/profile.jpg")
-      h1 John Doe
-      h3 @JohnDoe
-      .info
-        | Web developer.
-        br
-        | Lover of tech
+    #content.snap-content
+      .action-bar
+        .title Nav Drawer
+      h1 drawer one
+      h3 basic
+
+    .snap-drawers
+      .snap-drawer
+        .snap-drawer-left
+          .snap-drawer-nav
+            h3 Left
+          p Element
+
+
+
+    script.
+      var snapper = new Snap({
+        element: document.getElementById('content'),
+        disable: 'right',
+        hyperextensible: false
+      });
