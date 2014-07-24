@@ -99,7 +99,7 @@ body {
 }
 .action-bar .title {
   font-size: 25px;
-  color: #262626;
+  color: #000;
 }
 li {
   list-style: none;
@@ -107,7 +107,8 @@ li {
 li.circle {
   padding-left: 10px;
   text-indend: 8px;
-  margin-top: 5px;
+  margin-top: 15px;
+  color: #fff;
 }
 li.circle:before {
   content: "◯ ";
