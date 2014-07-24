@@ -66,7 +66,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 42px;
   width: 100%;
 }
 .snap-drawer .main {
@@ -90,11 +90,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 42px;
   width: 100%;
   background: #eaeaea;
-  -webkit-box-shadow: 0 0 3px #cdcdcd;
-          box-shadow: 0 0 3px #cdcdcd;
+  -webkit-box-shadow: 0 0 3px #bababa;
+          box-shadow: 0 0 3px #bababa;
   padding: 10px;
 }
 .action-bar .title {
@@ -107,6 +107,7 @@ li {
 li.circle {
   padding-left: 10px;
   text-indend: 8px;
+  margin-top: 5px;
 }
 li.circle:before {
   content: "◯ ";
