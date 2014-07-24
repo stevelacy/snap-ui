@@ -12,6 +12,8 @@
 }
 .snap-content {
   background: #efefef;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
 }
 .snap-drawer {
   background: #363636;

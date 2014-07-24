@@ -19,9 +19,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-lane,
-body {
+.font-lane {
   font-family: 'Lane';
+}
+@font-face {
+  font-family: 'trench';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Trench'), local('Trench'), url("../../font/trench.otf") format('opentype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-trench,
+body {
+  font-family: 'Trench';
 }
 body {
   height: 100%;
@@ -41,6 +54,8 @@ body {
 }
 .snap-content {
   background: #efefef;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
 }
 .snap-drawer {
   background: #363636;
@@ -83,5 +98,20 @@ body {
   padding: 10px;
 }
 .action-bar .title {
+  font-size: 25px;
   color: #262626;
+}
+li {
+  list-style: none;
+}
+li.circle {
+  padding-left: 10px;
+  text-indend: 8px;
+}
+li.circle:before {
+  content: "◯ ";
+  color: #16a085;
+}
+.content {
+  padding: 10px;
 }

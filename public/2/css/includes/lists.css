@@ -1,0 +1,11 @@
+li {
+  list-style: none;
+}
+li.circle {
+  padding-left: 10px;
+  text-indend: 8px;
+}
+li.circle:before {
+  content: "◯ ";
+  color: #008080;
+}
