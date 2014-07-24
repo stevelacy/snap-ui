@@ -27,13 +27,11 @@
   height: 42px;
   width: 100%;
 }
-.snap-drawer .main {
-  padding: 10px;
-}
 .snap-drawer .main .user {
   text-align: center;
 }
 .snap-drawer .main .user .icon {
+  margin-top: 10px;
   display: inline-block;
 }
 .snap-drawer .main .user .icon img {
