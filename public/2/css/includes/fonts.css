@@ -34,23 +34,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-trench,
-.action-bar {
+.font-trench {
   font-family: 'Trench';
-}
-.action-bar {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 42px;
-  width: 100%;
-  background: #eaeaea;
-  -webkit-box-shadow: 0 0 3px #bababa;
-          box-shadow: 0 0 3px #bababa;
-  padding: 10px;
-}
-.action-bar .title {
-  font-size: 25px;
-  color: #000;
 }

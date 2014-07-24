@@ -23,6 +23,20 @@
   font-family: 'Lane';
 }
 @font-face {
+  font-family: 'neue';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Neue'), local('Neue'), url("../../font/neue.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-neue,
+body {
+  font-family: 'Neue';
+}
+@font-face {
   font-family: 'trench';
   font-style: normal;
   font-weight: 200;
@@ -33,7 +47,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .font-trench,
-body {
+.action-bar {
   font-family: 'Trench';
 }
 body {
@@ -82,6 +96,46 @@ body {
   border: 4px solid #16a085;
   -webkit-box-shadow: 0 0 2px #363636;
           box-shadow: 0 0 2px #363636;
+}
+@font-face {
+  font-family: 'lane';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lane'), local('Lane'), url("../../font/lane.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-lane {
+  font-family: 'Lane';
+}
+@font-face {
+  font-family: 'neue';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Neue'), local('Neue'), url("../../font/neue.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-neue {
+  font-family: 'Neue';
+}
+@font-face {
+  font-family: 'trench';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Trench'), local('Trench'), url("../../font/trench.otf") format('opentype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-trench,
+.action-bar {
+  font-family: 'Trench';
 }
 .action-bar {
   position: relative;
