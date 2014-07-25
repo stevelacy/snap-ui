@@ -171,6 +171,7 @@ body {
 }
 .action-menu .menu {
   position: absolute;
+  top: 44px;
   right: 10px;
   width: 100px;
   background: #efefef;
@@ -183,6 +184,9 @@ body {
   padding: 10px;
   height: 30px;
   border-bottom: 1px solid #dfdfdf;
+}
+.action-menu .menu li:hover {
+  background: rgba(100,100,100,0.2);
 }
 li {
   list-style: none;
