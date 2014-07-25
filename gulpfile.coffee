@@ -44,6 +44,7 @@ gulp.task "server", (done) ->
 gulp.task "watch", ->
   gulp.watch ["./src/**/*.styl"], ["stylus"]
   gulp.watch ["./**/*.jade"], ["jade"]
+  gulp.watch ["./**/*.coffee"], ["coffee"]
   gulp.watch ["./src/*", "!./src/*.jade", "!./src/*.styl", "!./src/*.coffee"], ["copy"]
 
 gulp.task "default", ["server", "stylus", "jade", "coffee", "copy", "watch"]
