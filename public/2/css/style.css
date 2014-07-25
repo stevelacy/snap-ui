@@ -174,7 +174,7 @@ body {
   position: absolute;
   top: 44px;
   right: 10px;
-  width: 100px;
+  width: 200px;
   background: #efefef;
   -webkit-box-shadow: 0 1px 2px #555;
           box-shadow: 0 1px 2px #555;
@@ -182,8 +182,8 @@ body {
 .action-menu .menu li {
   overflow: hidden;
   list-style: none;
-  padding: 10px;
-  height: 30px;
+  padding: 15px;
+  height: 40px;
   border-bottom: 1px solid #dfdfdf;
 }
 .action-menu .menu li:hover {

@@ -8,8 +8,8 @@ $(document).ready ->
   $(document).mouseout (e) ->
     container = $ ".action-menu .menu"
     if !container.is e.target and container.has(e.target).length is 0
-      container.fadeOut()
+      container.fadeOut 300
 
   $(".action-menu .menu-button").click ->
-    $(@).parent().find(".menu").fadeToggle()
+    $(@).parent().find(".menu").fadeToggle 300
 
