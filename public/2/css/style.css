@@ -53,6 +53,7 @@ body {
 body {
   height: 100%;
   background: #efefef;
+  overflow: hidden;
 }
 .snapjs-right .snap-drawer-left {
   display: block;
@@ -73,7 +74,6 @@ body {
 }
 .snap-drawer {
   background: #363636;
-  color: #eee;
 }
 .snap-drawer-nav {
   position: relative;
@@ -192,14 +192,24 @@ li {
   list-style: none;
 }
 li.circle {
-  padding-left: 20px;
   text-indend: 8px;
   margin-top: 15px;
+  margin-left: 10%;
+  width: 80%;
   color: #fff;
+  height: 22px;
+  border-radius: 3px;
 }
 li.circle:before {
   content: "◯ ";
   color: #16a085;
+}
+li.circle:hover:before {
+  color: #fff;
+}
+li.circle:hover {
+  background: #16a085;
+  color: #fff;
 }
 .line {
   display: inline-block;
