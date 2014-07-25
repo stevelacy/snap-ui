@@ -8,8 +8,7 @@
         return container.fadeOut();
       }
     });
-    return $(".action-menu .button").click(function() {
-      console.log($(this).parent().find(".menu"));
+    return $(".action-menu .menu-button").click(function() {
       return $(this).parent().find(".menu").fadeToggle();
     });
   });

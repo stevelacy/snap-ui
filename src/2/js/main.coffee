@@ -10,7 +10,6 @@ $(document).ready ->
     if !container.is e.target and container.has(e.target).length is 0
       container.fadeOut()
 
-  $(".action-menu .button").click ->
-    console.log $(@).parent().find(".menu")
+  $(".action-menu .menu-button").click ->
     $(@).parent().find(".menu").fadeToggle()
 
