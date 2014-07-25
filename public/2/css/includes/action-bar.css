@@ -48,9 +48,9 @@
   background: #eaeaea;
   -webkit-box-shadow: 0 0 3px #bababa;
           box-shadow: 0 0 3px #bababa;
-  padding: 10px;
+  padding: 8px;
 }
 .action-bar .title {
-  font-size: 25px;
+  font-size: 30px;
   color: #000;
 }
