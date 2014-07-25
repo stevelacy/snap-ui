@@ -14,9 +14,9 @@ html
         .title circle
         .action-menu
           .button
-            img(src="images/sync.svg")
+            include ./svg/sync
           .button.menu-button
-            img(src="images/menu.svg")
+            include ./svg/menu
           .menu
             li Settings
             li Choice 2
@@ -30,10 +30,16 @@ html
           .main
             .user
               .icon
-                img(src="./images/profile.jpg")
+                img(src="images/profile.jpg")
             li.circle first
             li.circle second
             .line
+          .footer
+            .footer-menu
+              .button
+                include ./svg/sync
+
+
 
 
     script.
