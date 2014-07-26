@@ -9,7 +9,7 @@ html
     script(src="js/jquery.js")
     script(src="js/main.js")
   body
-    #content.snap-content
+    #main.snap-content
       .action-bar
         .title circle
         .action-menu
@@ -20,9 +20,14 @@ html
           .menu
             li Settings
             li Choice 2
-      .content
+      #content.content
         h1 drawer two
         h3 with menu
+
+        button.button Button
+        .button.action test
+        .button.green.action
+          include ./svg/sync
 
     .snap-drawers
       .snap-drawer
@@ -44,7 +49,7 @@ html
 
     script.
       var snapper = new Snap({
-        element: document.getElementById('content'),
+        element: document.getElementById('main'),
         disable: 'right',
         hyperextensible: false
       });
