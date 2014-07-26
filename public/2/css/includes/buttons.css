@@ -1,3 +1,8 @@
+.trans-all,
+.button {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .button {
   border: none;
   padding: 10px;

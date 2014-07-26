@@ -54,6 +54,12 @@ body {
   height: 100%;
   overflow: hidden;
 }
+.trans-all,
+.button,
+.tabs .tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .snapjs-right .snap-drawer-left {
   display: block;
   right: 0;
@@ -236,6 +242,12 @@ li.circle:hover {
   background: #16a085;
   color: #fff;
 }
+.trans-all,
+.button,
+.tabs .tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .button {
   border: none;
   padding: 10px;
@@ -319,12 +331,18 @@ li.circle:hover {
   fill: #000;
 }
 textarea {
+  width: 100%;
   border: 1px solid #eaeaea;
   background: #fafafa;
   padding: 5px;
   font-family: Neue;
   resize: none;
   outline: none;
+}
+.trans-all,
+.tabs .tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .tabs {
   width: 100%;
@@ -343,8 +361,12 @@ textarea {
   display: inline-block;
   border-bottom: 2px solid #dedede;
 }
-.tabs .tab:hover {
+.tabs .tab.active {
   border-bottom: 2px solid #3498db;
+  fill: #3498db;
+}
+.tabs .tab.active .path {
+  stroke: #3498db;
 }
 .line {
   display: inline-block;

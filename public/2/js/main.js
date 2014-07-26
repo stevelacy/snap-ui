@@ -14,10 +14,15 @@
     });
     tabs = function() {
       var c, w;
-      c = $(".tabs .tab").length;
+      tabs = $(".tabs .tab");
+      c = tabs.length;
       w = "" + (100 / c) + "%";
-      return $(".tabs .tab").css({
+      tabs.css({
         "width": w
+      });
+      return tabs.click(function() {
+        $(".tabs .tab").removeClass("active");
+        return $(this).toggleClass("active");
       });
     };
     return tabs();

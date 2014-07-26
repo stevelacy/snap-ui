@@ -1,3 +1,8 @@
+.trans-all,
+.tabs .tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .tabs {
   width: 100%;
   height: 45px;
@@ -15,6 +20,10 @@
   display: inline-block;
   border-bottom: 2px solid grey-light;
 }
-.tabs .tab:hover {
+.tabs .tab.active {
   border-bottom: 2px solid #00f;
+  fill: #00f;
+}
+.tabs .tab.active .path {
+  stroke: #00f;
 }

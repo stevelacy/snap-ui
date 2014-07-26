@@ -14,8 +14,13 @@ $(document).ready ->
     $(@).parent().find(".menu").fadeToggle 300
 
   tabs = ->
-    c = $(".tabs .tab").length
+    tabs = $(".tabs .tab")
+    c = tabs.length
     w = "#{100 / c}%"
-    $(".tabs .tab").css
+    tabs.css
       "width": w
-  tabs()
+    tabs.click ->
+      $(".tabs .tab").removeClass "active"
+      $(@).toggleClass "active"
+
+  tabs() # enable the tabs (includes width and active)
