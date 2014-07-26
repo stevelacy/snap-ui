@@ -20,23 +20,45 @@ html
           .menu
             li Settings
             li Choice 2
-      #content.content
-        h1 drawer two
-        h3 with menu
+      #content
+        .view
+          .tabs
+            .tab.active
+              .icon
+                include ./svg/prev
+              .html
+                | Tab content 1
 
-        button.button Button
-        .button.action test
-        .button.action.green
-          include ./svg/sync
-        textarea This is some text
+            .tab
+              .icon
+                include ./svg/user
+              .html
+                | Tab content 2
 
-        .tabs
-          .tab.active
-            include ./svg/prev
-          .tab
-            include ./svg/user
-          .tab
-            include ./svg/next
+            .tab
+              .icon
+                include ./svg/next
+              .html
+                | Tab content 3
+
+          .content this content is overridden by the tabs
+
+
+
+        .view
+          .content
+            h1 drawer two
+            h3 with menu
+
+            button.button.inline Button
+            .button.action.inline test
+            .button.action.green
+              include ./svg/sync
+            .spacer
+            textarea This is some text
+            input(type="text" value="TextBox")
+            input(type="number" value="1234")
+
 
     .snap-drawers
       .snap-drawer

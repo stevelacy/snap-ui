@@ -27,3 +27,6 @@
 .tabs .tab.active .path {
   stroke: #00f;
 }
+.tabs .html {
+  display: none;
+}

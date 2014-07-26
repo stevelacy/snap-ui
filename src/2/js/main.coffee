@@ -15,12 +15,17 @@ $(document).ready ->
 
   tabs = ->
     tabs = $(".tabs .tab")
+    html = $(".tabs .tab.active").find(".html").html()
+    $(".tabs").parent(".view").find(".content").html html
+
     c = tabs.length
     w = "#{100 / c}%"
     tabs.css
-      "width": w
+      width: w
     tabs.click ->
-      $(".tabs .tab").removeClass "active"
-      $(@).toggleClass "active"
+      tabs.removeClass "active"
+      $(@).addClass "active"
+      html = $(@).find(".html").html()
+      $(".tabs").parent(".view").find(".content").html html
 
   tabs() # enable the tabs (includes width and active)

@@ -13,16 +13,20 @@
       return $(this).parent().find(".menu").fadeToggle(300);
     });
     tabs = function() {
-      var c, w;
+      var c, html, w;
       tabs = $(".tabs .tab");
+      html = $(".tabs .tab.active").find(".html").html();
+      $(".tabs").parent(".view").find(".content").html(html);
       c = tabs.length;
       w = "" + (100 / c) + "%";
       tabs.css({
-        "width": w
+        width: w
       });
       return tabs.click(function() {
-        $(".tabs .tab").removeClass("active");
-        return $(this).toggleClass("active");
+        tabs.removeClass("active");
+        $(this).addClass("active");
+        html = $(this).find(".html").html();
+        return $(".tabs").parent(".view").find(".content").html(html);
       });
     };
     return tabs();

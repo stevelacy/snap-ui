@@ -330,14 +330,20 @@ li.circle:hover {
 .footer-menu .button .svg-sync .path {
   fill: #000;
 }
+input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 textarea {
   width: 100%;
+  resize: none;
+}
+textarea,
+input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  outline: none;
   border: 1px solid #eaeaea;
   background: #fafafa;
   padding: 5px;
-  font-family: Neue;
-  resize: none;
-  outline: none;
 }
 .trans-all,
 .tabs .tab {
@@ -368,6 +374,9 @@ textarea {
 .tabs .tab.active .path {
   stroke: #3498db;
 }
+.tabs .html {
+  display: none;
+}
 .line {
   display: inline-block;
   width: 80%;
@@ -376,6 +385,12 @@ textarea {
   background: #555;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
+}
+.inline {
+  display: inline-block;
+}
+.spacer {
+  height: 50px;
 }
 .content {
   padding: 10px;

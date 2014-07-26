@@ -7,3 +7,9 @@
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
 }
+.inline {
+  display: inline-block;
+}
+.spacer {
+  height: 50px;
+}

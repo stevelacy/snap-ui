@@ -1,0 +1,15 @@
+input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+textarea,
+input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  outline: none;
+  border: 1px solid white-dark-shade;
+  background: white-light-shade;
+  padding: 5px;
+}
