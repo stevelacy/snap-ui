@@ -1,33 +1,46 @@
+@import "./colors"
+
 .button
   border none
   padding 10px
-  background #dedede
-  color #000
+  background grey-light
+  color black
   box-shadow 0 1px 2px #888
   margin 5px
+  outline none
+  &:hover
+    background darken(grey-light, 10)
   &.action
     z-index 5
     width 50px
     height 50px
-    color #fff
+    color white
     font-weight bold
     text-align center
     border-radius 25px
     padding-top 15px
     background red
+    &:hover
+      background darken(red, 10)
     svg, img
       height 28px
       margin-top -3px
       fill white
   &.green
     background green
-    color #fff
+    color white
+    &:hover
+      background darken(green, 10)
   &.red
     background red
-    color #fff
+    color white
+    &:hover
+      background darken(red, 10)
   &.blue
     background blue
-    color #fff
+    color white
+    &:hover
+      background darken(blue, 10)
 
 
 .button-reset
@@ -56,4 +69,4 @@
       .arrows
         fill teal
       .path
-        fill #000
+        fill black

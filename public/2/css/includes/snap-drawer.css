@@ -11,12 +11,12 @@
   opacity: 0;
 }
 .snap-content {
-  background: #efefef;
+  background: white-shade;
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
 }
 .snap-drawer {
-  background: #363636;
+  background: grey-dark;
 }
 .snap-drawer-nav {
   position: relative;
@@ -37,8 +37,8 @@
   width: 100px;
   border-radius: 50px;
   border: 4px solid #008080;
-  -webkit-box-shadow: 0 0 2px #363636;
-          box-shadow: 0 0 2px #363636;
+  -webkit-box-shadow: 0 0 2px grey-dark;
+          box-shadow: 0 0 2px grey-dark;
 }
 .snap-drawer .footer {
   position: absolute;
@@ -50,8 +50,8 @@
 }
 .snap-drawer .footer .footer-menu {
   text-align: center;
-  -webkit-box-shadow: 0 0 1px #555;
-          box-shadow: 0 0 1px #555;
+  -webkit-box-shadow: 0 0 1px #808080;
+          box-shadow: 0 0 1px #808080;
 }
 .snap-drawer .footer .footer-menu .button {
   display: inline-block;

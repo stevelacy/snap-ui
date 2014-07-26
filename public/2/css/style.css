@@ -208,7 +208,7 @@ body {
   list-style: none;
   padding: 15px;
   height: 40px;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #eaeaea;
 }
 .action-menu .menu li:hover {
   background: rgba(100,100,100,0.2);
@@ -244,6 +244,10 @@ li.circle:hover {
   -webkit-box-shadow: 0 1px 2px #888;
           box-shadow: 0 1px 2px #888;
   margin: 5px;
+  outline: none;
+}
+.button:hover {
+  background: #c5c5c5;
 }
 .button.action {
   z-index: 5;
@@ -256,6 +260,9 @@ li.circle:hover {
   padding-top: 15px;
   background: #e74c3c;
 }
+.button.action:hover {
+  background: #d62c1a;
+}
 .button.action svg,
 .button.action img {
   height: 28px;
@@ -266,13 +273,22 @@ li.circle:hover {
   background: #27ae60;
   color: #fff;
 }
+.button.green:hover {
+  background: #1e8449;
+}
 .button.red {
   background: #e74c3c;
   color: #fff;
 }
+.button.red:hover {
+  background: #d62c1a;
+}
 .button.blue {
   background: #3498db;
   color: #fff;
+}
+.button.blue:hover {
+  background: #217dbb;
 }
 .button-reset,
 .action-menu .button,
@@ -301,6 +317,14 @@ li.circle:hover {
 }
 .footer-menu .button .svg-sync .path {
   fill: #000;
+}
+textarea {
+  border: 1px solid #eaeaea;
+  background: #fafafa;
+  padding: 5px;
+  font-family: Neue;
+  resize: none;
+  outline: none;
 }
 .line {
   display: inline-block;

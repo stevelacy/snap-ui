@@ -6,6 +6,10 @@
   -webkit-box-shadow: 0 1px 2px #888;
           box-shadow: 0 1px 2px #888;
   margin: 5px;
+  outline: none;
+}
+.button:hover {
+  background: #c5c5c5;
 }
 .button.action {
   z-index: 5;
@@ -16,7 +20,10 @@
   text-align: center;
   border-radius: 25px;
   padding-top: 15px;
-  background: #f00;
+  background: #e74c3c;
+}
+.button.action:hover {
+  background: #d62c1a;
 }
 .button.action svg,
 .button.action img {
@@ -25,16 +32,25 @@
   fill: #fff;
 }
 .button.green {
-  background: #008000;
+  background: #27ae60;
   color: #fff;
+}
+.button.green:hover {
+  background: #1e8449;
 }
 .button.red {
-  background: #f00;
+  background: #e74c3c;
   color: #fff;
 }
+.button.red:hover {
+  background: #d62c1a;
+}
 .button.blue {
-  background: #00f;
+  background: #3498db;
   color: #fff;
+}
+.button.blue:hover {
+  background: #217dbb;
 }
 .button-reset,
 .action-menu .button,
@@ -59,7 +75,7 @@
   height: 28px;
 }
 .footer-menu .button .svg-sync .arrows {
-  fill: #008080;
+  fill: #16a085;
 }
 .footer-menu .button .svg-sync .path {
   fill: #000;
