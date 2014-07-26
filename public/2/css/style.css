@@ -326,6 +326,26 @@ textarea {
   resize: none;
   outline: none;
 }
+.tabs {
+  width: 100%;
+  height: 45px;
+  background: #fafafa;
+  text-align: center;
+}
+.tabs svg,
+.tabs img {
+  height: 30px;
+}
+.tabs .tab {
+  max-width: 80px;
+  height: 45px;
+  padding-top: 8px;
+  display: inline-block;
+  border-bottom: 2px solid #dedede;
+}
+.tabs .tab:hover {
+  border-bottom: 2px solid #3498db;
+}
 .line {
   display: inline-block;
   width: 80%;

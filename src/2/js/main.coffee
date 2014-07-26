@@ -13,3 +13,9 @@ $(document).ready ->
   $(".action-menu .menu-button").click ->
     $(@).parent().find(".menu").fadeToggle 300
 
+  tabs = ->
+    c = $(".tabs .tab").length
+    w = "#{100 / c}%"
+    $(".tabs .tab").css
+      "width": w
+  tabs()
