@@ -55,3 +55,6 @@
   font-size: 30px;
   color: #000;
 }
+.action-bar+ div {
+  margin-top: 42px;
+}

@@ -1,6 +1,6 @@
 (function() {
   $(document).ready(function() {
-    var tabs;
+    var cards, tabs;
     $(".action-menu .menu").hide();
     $(document).mouseout(function(e) {
       var container;
@@ -29,7 +29,25 @@
         return $(".tabs").parent(".view").find(".content").html(html);
       });
     };
-    return tabs();
+    tabs();
+    cards = function() {
+      cards = $(".cards .card");
+      return cards.each(function() {
+        var slide;
+        slide = function(el) {
+          return $(el).animate({
+            "margin-left": "-100px",
+            "opacity": "0"
+          }).slideToggle();
+        };
+        return cards.swipe({
+          swipeLeft: function(e, direction) {
+            return slide(this);
+          }
+        });
+      });
+    };
+    return cards();
   });
 
 }).call(this);

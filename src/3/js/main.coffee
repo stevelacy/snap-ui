@@ -14,7 +14,7 @@ $(document).ready ->
     $(@).parent().find(".menu").fadeToggle 300
 
   tabs = ->
-    tabs = $(".tabs .tab")
+    tabs = $ ".tabs .tab"
     html = $(".tabs .tab.active").find(".html").html()
     $(".tabs").parent(".view").find(".content").html html
 
@@ -29,3 +29,18 @@ $(document).ready ->
       $(".tabs").parent(".view").find(".content").html html
 
   tabs() # enable the tabs (includes width and active)
+
+  cards = ->
+    cards = $ ".cards .card"
+    cards.each ->
+      slide = (el) ->
+        $(el).animate
+          "margin-left": "-100px"
+          "opacity": "0"
+        .slideToggle()
+
+      cards.swipe
+        swipeLeft: (e, direction) ->
+          slide @
+
+  cards()

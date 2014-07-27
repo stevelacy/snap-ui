@@ -7,10 +7,11 @@ html
     link(rel="stylesheet" type="text/css" href="css/style.css")
     script(src="js/snap.js")
     script(src="js/jquery.js")
+    script(src="js/swipe.js")
     script(src="js/main.js")
   body
     #main.snap-content
-      .spacer
+      .spacer-42
       #content
         .view
           .tabs
@@ -59,6 +60,11 @@ html
                 .title Title of card
                 .menu
                 .content This is the content
+              .card
+                .title Title of card two
+                .menu
+                .content Slide Left to remove :)
+                  include ./svg/prev
 
 
     .snap-drawers
