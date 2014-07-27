@@ -1,0 +1,23 @@
+li {
+  list-style: none;
+}
+li.circle {
+  text-indend: 8px;
+  margin-top: 15px;
+  margin-left: 10%;
+  width: 80%;
+  color: #fff;
+  height: 22px;
+  border-radius: 3px;
+}
+li.circle:before {
+  content: "◯ ";
+  color: #008080;
+}
+li.circle:hover:before {
+  color: #fff;
+}
+li.circle:hover {
+  background: #008080;
+  color: #fff;
+}

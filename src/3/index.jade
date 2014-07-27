@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    title nav drawer - 2
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" type="text/css" href="css/vendor/snap.css")
+    link(rel="stylesheet" type="text/css" href="css/style.css")
+    script(src="js/snap.js")
+    script(src="js/jquery.js")
+    script(src="js/main.js")
+  body
+    #main.snap-content
+      .spacer
+      #content
+        .view
+          .tabs
+            .tab.active
+              .icon
+                include ./svg/prev
+              .html
+                | Tab content 1
+
+            .tab
+              .icon
+                include ./svg/user
+              .html
+                | Tab content 2
+
+            .tab
+              .icon
+                include ./svg/next
+              .html
+                | Tab content 3
+
+          .content this content is overridden by the tabs
+
+
+
+        .view
+          .content
+            h1 drawer two
+            h3 with menu
+
+            button.button.inline Button
+            .button.action.inline test
+            .button.action.green
+              include ./svg/sync
+            .spacer
+            h3 Inputs
+            input(type="text" placeholder="Enter text here")
+            input(type="text" value="TextBox")
+            input(type="number" value="1234")
+            textarea This is some text in a textarea
+        .view
+          .content
+            .cards
+              .card
+                .title Title of card
+                .menu
+                .content This is the content
+
+
+    .snap-drawers
+      .snap-drawer
+        .snap-drawer-left
+          .spacer
+          .main
+            .user
+              .icon
+                img(src="images/profile.jpg")
+            li.circle first
+            li.circle second
+            .line
+          .footer
+            .footer-menu
+              .button
+                include ./svg/sync
+    .action-bar
+      .title circle
+      .action-menu
+        .button
+          include ./svg/sync
+        .button.menu-button
+          include ./svg/menu
+        .menu
+          li Settings
+          li Choice 2
+
+
+
+    script.
+      var snapper = new Snap({
+        element: document.getElementById('main'),
+        disable: 'right',
+        hyperextensible: false
+      });

@@ -1,0 +1,23 @@
+@import "./trans"
+
+.tabs
+  width 100%
+  height 45px
+  background white-light-shade
+  text-align center
+  svg, img
+    height 30px
+  .tab
+    @extend .trans-all
+    max-width 80px
+    height 45px
+    padding-top 8px
+    display inline-block
+    border-bottom 2px solid grey-light
+    &.active
+      border-bottom 2px solid blue
+      fill blue
+      .path
+        stroke blue
+  .html
+    display none
