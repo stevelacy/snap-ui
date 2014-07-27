@@ -49,15 +49,25 @@ html
           .content
             h1 drawer two
             h3 with menu
+            h3 action bar is NOT fixed. View version 3
 
             button.button.inline Button
             .button.action.inline test
             .button.action.green
               include ./svg/sync
             .spacer
-            textarea This is some text
+            h3 Inputs
+            input(type="text" placeholder="Enter text here")
             input(type="text" value="TextBox")
             input(type="number" value="1234")
+            textarea This is some text in a textarea
+        .view
+          .content
+            .cards
+              .card
+                .title Title of card
+                .menu
+                .content This is the content
 
 
     .snap-drawers
