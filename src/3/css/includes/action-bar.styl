@@ -1,4 +1,5 @@
 @import "./includes/fonts"
+@import "./includes/extras"
 
 .action-bar
   @extend .font-trench
@@ -12,8 +13,20 @@
   background white-dark-shade
   box-shadow 0 0 3px #bababa
   padding 8px
+  .snap-button
+    width 30px
+    height 32px
+    svg, img
+      height 32px
   .title
     font-size 30px
     color black
+    height 34px
+    margin-left 12px
+  .snap-button, .title
+    @extend .align-vertical
+    position relative
+    display block
+    float left
   &+ div
     margin-top 42px
