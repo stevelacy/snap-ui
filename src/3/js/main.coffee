@@ -43,4 +43,12 @@ $(document).ready ->
         swipeLeft: (e, direction) ->
           slide @
 
-  cards()
+  cards() # enable the cards
+
+  snapButton = ->
+    $(".snap-button").click ->
+      if snapper.state().state=="left"
+        snapper.close()
+      else
+        snapper.open "left"
+  snapButton()
