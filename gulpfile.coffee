@@ -8,14 +8,14 @@ reload = require "gulp-livereload"
 prefix = require "gulp-autoprefixer"
 
 gulp.task "stylus", ->
-  gulp.src "./src/**/*.styl"
+  gulp.src "./src/**/style.styl"
     .pipe stylus()
     .pipe prefix()
     .pipe gulp.dest "./public"
     .pipe reload()
 
 gulp.task "jade", ->
-  gulp.src "./src/**/*.jade"
+  gulp.src "./src/**/index.jade"
     .pipe jade()
     .pipe gulp.dest "./public"
     .pipe reload()
