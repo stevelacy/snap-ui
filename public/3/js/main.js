@@ -1,6 +1,6 @@
 (function() {
   $(document).ready(function() {
-    var cards, tabs;
+    var cards, snapButton, tabs;
     $(".action-menu .menu").hide();
     $(document).mouseout(function(e) {
       var container;
@@ -47,7 +47,17 @@
         });
       });
     };
-    return cards();
+    cards();
+    snapButton = function() {
+      return $(".snap-button").click(function() {
+        if (snapper.state().state === "left") {
+          return snapper.close();
+        } else {
+          return snapper.open("left");
+        }
+      });
+    };
+    return snapButton();
   });
 
 }).call(this);
