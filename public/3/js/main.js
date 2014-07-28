@@ -1,7 +1,12 @@
 (function() {
   $(document).ready(function() {
-    var cards, snapButton, tabs;
+    var cards, snapButton, snapper, tabs;
     $(".action-menu .menu").hide();
+    snapper = new Snap({
+      element: document.getElementById('main'),
+      disable: 'right',
+      hyperextensible: false
+    });
     $(document).mouseout(function(e) {
       var container;
       container = $(".action-menu .menu");
@@ -49,11 +54,22 @@
     };
     cards();
     snapButton = function() {
-      return $(".snap-button").click(function() {
+      var el;
+      el = $(".snap-button");
+      el.click(function() {
         if (snapper.state().state === "left") {
-          return snapper.close();
+          snapper.close();
+          return $(this).removeClass("active");
         } else {
-          return snapper.open("left");
+          snapper.open("left");
+          return $(this).addClass("active");
+        }
+      });
+      return snapper.on("animated", function() {
+        if (snapper.state().state === "left") {
+          return el.addClass("active");
+        } else {
+          return el.removeClass("active");
         }
       });
     };

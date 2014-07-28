@@ -1,5 +1,6 @@
 @import "./includes/fonts"
 @import "./includes/extras"
+@import "./includes/trans"
 
 .action-bar
   @extend .font-trench
@@ -14,10 +15,14 @@
   box-shadow 0 0 3px #bababa
   padding 8px
   .snap-button
+    @extend .trans-all
     width 30px
     height 32px
     svg, img
       height 32px
+    &.active
+      margin-left -10px
+      width 40px
   .title
     font-size 30px
     color black

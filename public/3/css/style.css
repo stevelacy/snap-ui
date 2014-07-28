@@ -58,6 +58,7 @@ body {
   overflow: hidden;
 }
 .trans-all,
+.action-bar .snap-button,
 .button,
 .tabs .tab {
   -webkit-transition: all 0.2s ease;
@@ -204,6 +205,13 @@ body {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.trans-all,
+.action-bar .snap-button,
+.button,
+.tabs .tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .action-bar {
   position: relative;
   z-index: 5;
@@ -224,6 +232,10 @@ body {
 .action-bar .snap-button svg,
 .action-bar .snap-button img {
   height: 32px;
+}
+.action-bar .snap-button.active {
+  margin-left: -10px;
+  width: 40px;
 }
 .action-bar .title {
   font-size: 30px;

@@ -2,6 +2,10 @@ $(document).ready ->
 
   $(".action-menu .menu").hide()
 
+  snapper = new Snap
+    element: document.getElementById 'main'
+    disable: 'right'
+    hyperextensible: false
 
   # click functions
 
@@ -46,9 +50,18 @@ $(document).ready ->
   cards() # enable the cards
 
   snapButton = ->
-    $(".snap-button").click ->
-      if snapper.state().state=="left"
+    el = $ ".snap-button"
+    el.click ->
+      if snapper.state().state == "left"
         snapper.close()
+        $(@).removeClass "active"
       else
         snapper.open "left"
-  snapButton()
+        $(@).addClass "active"
+    snapper.on "animated", ->
+      if snapper.state().state == "left"
+        el.addClass "active"
+      else
+        el.removeClass "active"
+
+  snapButton() # enable snap button
