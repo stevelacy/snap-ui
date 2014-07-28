@@ -13,6 +13,9 @@ gulp.task "stylus", ->
     .pipe prefix()
     .pipe gulp.dest "./public"
     .pipe reload()
+  gulp.src "./src/**/vendor/*.styl"
+    .pipe stylus()
+    .pipe gulp.dest "./public"
 
 gulp.task "jade", ->
   gulp.src "./src/**/index.jade"
