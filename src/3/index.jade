@@ -11,7 +11,7 @@ html
     script(src="js/main.js")
   body
     #main.snap-content
-      .spacer-42
+      .spacer-46
       #content
         .view
           .tabs
@@ -20,18 +20,24 @@ html
                 include ./svg/prev
               .html
                 | Tab content 1
+                br
+                | some more content
 
             .tab
               .icon
                 include ./svg/user
               .html
                 | Tab content 2
+                br
+                | some more content
 
             .tab
               .icon
                 include ./svg/next
               .html
                 | Tab content 3
+                br
+                | some more content
 
           .content this content is overridden by the tabs
 

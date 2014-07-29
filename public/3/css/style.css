@@ -194,12 +194,13 @@ body {
 .spacer-100 {
   height: 100px;
 }
-.spacer-42 {
-  height: 42px;
+.spacer-46 {
+  height: 46px;
 }
 .align-vertical,
 .action-bar .snap-button,
-.action-bar .title {
+.action-bar .title,
+.action-menu .button {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -218,11 +219,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 42px;
+  height: 46px;
   width: 100%;
   background: #eaeaea;
-  -webkit-box-shadow: 0 0 3px #bababa;
-          box-shadow: 0 0 3px #bababa;
+  -webkit-box-shadow: 0 0 4px #ababab;
+          box-shadow: 0 0 4px #ababab;
   padding: 8px;
 }
 .action-bar .snap-button {
@@ -241,7 +242,7 @@ body {
   font-size: 30px;
   color: #000;
   height: 34px;
-  margin-left: 12px;
+  margin-left: 24px;
 }
 .action-bar .snap-button,
 .action-bar .title {
@@ -249,15 +250,42 @@ body {
   display: block;
   float: left;
 }
-.action-bar+ div {
-  margin-top: 42px;
+.line {
+  display: inline-block;
+  width: 80%;
+  margin: 20px 0 0 10%;
+  height: 1px;
+  background: #555;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+}
+.inline {
+  display: inline-block;
+}
+.spacer {
+  height: 50px;
+}
+.spacer-100 {
+  height: 100px;
+}
+.spacer-46 {
+  height: 46px;
+}
+.align-vertical,
+.action-menu .button {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .action-menu {
   position: absolute;
   top: 0;
   right: 0;
-  height: 42px;
-  padding: 1px;
+  height: 46px;
+}
+.action-menu .button {
+  position: relative;
 }
 .action-menu img,
 .action-menu svg {
@@ -265,7 +293,7 @@ body {
 }
 .action-menu .menu {
   position: absolute;
-  top: 44px;
+  top: 46px;
   right: 10px;
   width: 200px;
   background: #efefef;
@@ -317,8 +345,8 @@ li.circle:hover {
   padding: 10px;
   background: #dedede;
   color: #000;
-  -webkit-box-shadow: 0 1px 2px #888;
-          box-shadow: 0 1px 2px #888;
+  -webkit-box-shadow: 0 0 1px #888;
+          box-shadow: 0 0 1px #888;
   margin: 5px;
   outline: none;
 }
@@ -488,8 +516,8 @@ input {
 .spacer-100 {
   height: 100px;
 }
-.spacer-42 {
-  height: 42px;
+.spacer-46 {
+  height: 46px;
 }
 .align-vertical {
   top: 50%;

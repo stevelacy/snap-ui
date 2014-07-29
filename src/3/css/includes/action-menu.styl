@@ -1,14 +1,18 @@
+@import "./includes/extras"
+
 .action-menu
   position absolute
   top 0
   right 0
-  height 42px
-  padding 1px
+  height 46px
+  .button
+    @extend .align-vertical
+    position relative
   img, svg
     height 28px
   .menu
     position absolute
-    top 44px
+    top 46px
     right 10px
     width 200px
     background white-shade
