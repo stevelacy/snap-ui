@@ -32,8 +32,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-neue,
-body {
+.font-neue {
   font-family: 'Neue';
 }
 @font-face {
@@ -46,9 +45,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-trench,
-.action-bar {
+.font-trench {
   font-family: 'Trench';
+}
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Roboto'), local('Roboto'), url("../../font/roboto.ttf") format('truetype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-roboto,
+body,
+.action-bar,
+input,
+textarea {
+  font-family: 'Roboto';
 }
 * {
   postion: relative;
@@ -172,9 +187,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-trench,
-.action-bar {
+.font-trench {
   font-family: 'Trench';
+}
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Roboto'), local('Roboto'), url("../../font/roboto.ttf") format('truetype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-roboto,
+.action-bar,
+input,
+textarea {
+  font-family: 'Roboto';
 }
 .line {
   display: inline-block;
@@ -239,9 +269,9 @@ body {
   width: 40px;
 }
 .action-bar .title {
-  font-size: 30px;
+  font-size: 22px;
   color: #000;
-  height: 34px;
+  height: 25px;
   margin-left: 24px;
 }
 .action-bar .snap-button,
@@ -301,7 +331,6 @@ body {
           box-shadow: 0 1px 2px #555;
 }
 .action-menu .menu li {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   overflow: hidden;
   list-style: none;
   padding: 15px;
@@ -422,8 +451,59 @@ li.circle:hover {
 .footer-menu .button .svg-sync .path {
   fill: #000;
 }
-input {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+@font-face {
+  font-family: 'lane';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lane'), local('Lane'), url("../../font/lane.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-lane {
+  font-family: 'Lane';
+}
+@font-face {
+  font-family: 'neue';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Neue'), local('Neue'), url("../../font/neue.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-neue {
+  font-family: 'Neue';
+}
+@font-face {
+  font-family: 'trench';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Trench'), local('Trench'), url("../../font/trench.otf") format('opentype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-trench {
+  font-family: 'Trench';
+}
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Roboto'), local('Roboto'), url("../../font/roboto.ttf") format('truetype');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-roboto,
+input,
+textarea {
+  font-family: 'Roboto';
 }
 textarea {
   width: 100%;
@@ -431,7 +511,6 @@ textarea {
 }
 textarea,
 input {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   outline: none;
   border: none;
   border-bottom: 1px solid #eaeaea;
