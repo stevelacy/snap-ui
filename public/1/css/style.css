@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+@font-face {
+  font-family: 'lane';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lane'), local('Lane'), url("../../font/lane.woff") format('woff');
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-lane,
+body {
+  font-family: 'Lane';
+}
+body {
+  height: 100%;
+  background: #efefef;
+}
+.snapjs-right .snap-drawer-left {
+  display: block;
+  right: 0;
+  left: auto;
+}
+.snapjs-right .snap-drawer-right {
+  display: none;
+}
+.snapjs-expand-left .drawer-inner,
+.snapjs-expand-right .drawer-inner {
+  opacity: 0;
+}
+.snap-content {
+  background: #efefef;
+}
+.snap-drawer {
+  background: #363636;
+  color: #eee;
+}
+.snap-drawer-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 0 3px #262626;
+  padding: 10px;
+}
+.action-bar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  background: #eaeaea;
+  box-shadow: 0 0 3px #cdcdcd;
+  padding: 10px;
+}
+.action-bar .title {
+  color: #262626;
+}
